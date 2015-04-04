@@ -1,9 +1,11 @@
 package com.example.johan.hellocompass;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class HelloCompassActivity extends ActionBarActivity {
@@ -35,5 +37,12 @@ public class HelloCompassActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    /** Called when the user clicks the Send button */
+    public void startCompass(View view) {
+        Intent intent = new Intent(this, RunCompassActivity.class);
+       // intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
     }
 }
