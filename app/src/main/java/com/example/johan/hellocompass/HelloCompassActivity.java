@@ -42,7 +42,6 @@ public class HelloCompassActivity extends ActionBarActivity {
     /** Called when the user clicks the Send button */
     public void startCompass(View view) {
         Intent intent = new Intent(this, RunCompassActivity.class);
-       // intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
 }
