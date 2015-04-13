@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
-
+//lite test då
 public class RunCompassActivity extends Activity implements SensorEventListener {
 
     private ImageView mPointer;
